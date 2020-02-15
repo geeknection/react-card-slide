@@ -1,3 +1,7 @@
 {
-    "presets": [["react-app", { "absoluteRuntime": false }]]
+    "presets": ["env"],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-react-jsx"
+    ]
 }

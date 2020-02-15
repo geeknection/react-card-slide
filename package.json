@@ -3,16 +3,38 @@
   "version": "1.0.7",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1"
+    "@testing-library/user-event": "^7.2.1",
+    "webpack": "^4.41.6"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "mkdir -p dist && babel src/lib -o dist/index.js",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0",
+    "webpack-cli": "^3.3.11"
   },
+  "peerDependencies": {
+    "react-dom": "^16.12.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -28,20 +50,6 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
-  },
-  "peerDependencies": {
-    "react-dom": "^16.12.0"
-  },
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/geeknection/react-card-slide.git"
