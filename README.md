@@ -7,11 +7,11 @@ React Jsx component used to create Card Item and Slide of Card Items
 
 ## Getting started
 
-`yarn add geeknection/react-card-slide`
+`yarn add react-card-slide`
 
 or
 
-`npm install geeknection/react-card-slide --save`
+`npm install react-card-slide --save`
 
 ## Usage
 
