@@ -1,0 +1,162 @@
+.card-slide {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    &:hover {
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    .card-slide-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    .card {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .slide-left {
+        animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .slide-right {
+        animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .prev {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover, .dot.active {
+        background-color: #717171;
+    }
+    .card {
+        margin-bottom: 0px;
+        .card-footer {
+            border-bottom: solid 1px #e2e5ef;
+        }
+    }
+    .card-dot {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}

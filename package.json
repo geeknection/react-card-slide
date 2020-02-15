@@ -1,43 +1,40 @@
 {
   "name": "react-card-slide",
-  "version": "1.0.8",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "1.0.7",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "publish:npm": "babel ./src/lib -d dist --copy-files"
   },
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "webpack": "^4.41.6"
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.8.4",
-    "babel-cli": "^6.26.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
-    "webpack-cli": "^3.3.11"
-  },
-  "peerDependencies": {
-    "react-dom": "^16.12.0"
+    "babel-preset-react": "^6.24.1"
   },
   "files": [
     "dist",
     "README.md"
   ],
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
