@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "test": "mocha"
+    "test": "rm --require babel-core/register --recursive test"
   },
   "files": [
     "dist",
