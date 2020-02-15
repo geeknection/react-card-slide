@@ -31,14 +31,14 @@ class CardSlideItem extends React.Component {
             bodyImage: null
         }
 
-        this.__renderStateProps = this.__renderStateProps.bind(this);
-        this.__updateRenderStateProps = this.__updateRenderStateProps.bind(this);
+        this.renderStateProps = this.renderStateProps.bind(this);
+        this.updateRenderStateProps = this.updateRenderStateProps.bind(this);
     }
 
     /**
      * Registra os dados que vierem do props caso existam no state
      */
-    __renderStateProps = async () => {
+    async renderStateProps() {
         try {
             const state = Object.assign({}, this.state);
             for (let key in this.props) {
@@ -57,7 +57,7 @@ class CardSlideItem extends React.Component {
     /**
      * Atualiza os dados que vierem do props caso existam no state
      */
-    __updateRenderStateProps = (prevProps) => {
+    updateRenderStateProps = (prevProps) => {
         if (this.state.rendered === false) return false;
         try {
             if (prevProps !== this.props) {
@@ -78,11 +78,11 @@ class CardSlideItem extends React.Component {
     }
 
     componentDidMount() {
-        this.__renderStateProps();
+        this.renderStateProps();
     }
 
     componentDidUpdate(prevProps) {
-        this.__updateRenderStateProps(prevProps);
+        this.updateRenderStateProps(prevProps);
     }
 
     render() {

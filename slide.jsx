@@ -21,7 +21,7 @@ class CardSlide extends React.Component {
             cardSelected: 1,
             slideAnimation: 'slide-left'
         }
-        this.__renderStateProps = this.__renderStateProps.bind(this);
+        this.renderStateProps = this.renderStateProps.bind(this);
         this.chooseCardSlideItem = this.chooseCardSlideItem.bind(this);
         this.nextItem = this.nextItem.bind(this);
         this.prevItem = this.prevItem.bind(this);
@@ -30,7 +30,7 @@ class CardSlide extends React.Component {
     /**
      * Registra os dados que vierem do props caso existam no state
      */
-    __renderStateProps = () => {
+    renderStateProps() {
         try {
             const state = Object.assign({}, this.state);
             for (let key in this.props) {
@@ -48,7 +48,7 @@ class CardSlide extends React.Component {
     /**
      * Seleciona um slide ao clicar em um dot [bolinha(s) que aparece abaixo do slide]
      */
-    chooseCardSlideItem = (slideItem) => {
+    chooseCardSlideItem(slideItem) {
         try {
             this.setState({
                 cardSelected: slideItem+1,
@@ -63,7 +63,7 @@ class CardSlide extends React.Component {
     /**
      * Retorna para o item anterior do slide
      */
-    prevItem = () => {
+    prevItem() {
         if (this.state.cardSelected === 1) return false;
         try {
             this.setState({
@@ -79,7 +79,7 @@ class CardSlide extends React.Component {
     /**
      * Avança para o próximo item do slide
      */
-    nextItem = () => {
+    nextItem() {
         if (this.state.cardSelected === this.state.items.length) return false;
         try {
             this.setState({
@@ -93,7 +93,7 @@ class CardSlide extends React.Component {
     }
 
     componentDidMount() {
-        this.__renderStateProps();
+        this.renderStateProps();
     }
 
     render() {
