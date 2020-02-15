@@ -2,6 +2,7 @@
   "name": "react-card-slide",
   "version": "1.0.6",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
