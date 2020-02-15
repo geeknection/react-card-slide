@@ -1,6 +1,6 @@
 {
   "name": "react-card-slide",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "babel": {
     "presets": [
       "@babel/preset-env",
