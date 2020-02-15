@@ -21,15 +21,11 @@ class CardSlideItem extends React.Component {
             cardDescription: 'Descrição do card',
             cardTotal: 0,
             cardData: [],
-            cardColorStep: '#3F6AD8',
-            cardColorStepActive: '#3F6AD8',
             cardGraphLineColor: '#30B1FF',
             cardGraphBgColor: '#D6EFFF',
             rendered: false,
-            key: '',
             isSelected: true,
             slideAnimation: '',
-            showFooter: false,
             showBodyImage: false,
             showBodyText: true,
             bodyImage: null
@@ -91,7 +87,7 @@ class CardSlideItem extends React.Component {
 
     render() {
       try {
-        const { cardHeaderIcon, cardName, cardDescription, cardTotal, isSelected, slideAnimation, showFooter, showBodyImage, bodyImage } = this.state;
+        const { cardHeaderIcon, cardName, cardDescription, cardTotal, isSelected, slideAnimation, showBodyImage, bodyImage } = this.state;
         return (
             <div className={`card-slide-item ${isSelected === true ? ('enabled ' + slideAnimation) : 'disabled'}`}>
                 <div className='card'>
