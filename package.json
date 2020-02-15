@@ -27,5 +27,9 @@
   "homepage": "https://github.com/geeknection/react-card-slide#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
