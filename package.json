@@ -1,6 +1,6 @@
 {
   "name": "react-card-slide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Jsx component used to create Card Item and Slide of Card Items",
   "main": "dist/index.js",
   "module": "dist/index.js",
