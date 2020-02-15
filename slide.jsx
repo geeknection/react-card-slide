@@ -99,8 +99,7 @@ class CardSlide extends React.Component {
     render() {
         try {
             const { items, cardSelected, slideAnimation } = this.state;
-            return(
-                <div className='card-slide'>
+            return (<div className='card-slide'>
                     <div className='card-slide-container'>
                         {items.map( (item, key) => {
                             if (key === (cardSelected-1)) {
@@ -121,8 +120,7 @@ class CardSlide extends React.Component {
                         })}
                         
                     </div>
-                </div>
-            );
+                </div>);
         }
         catch(error) {
             return (

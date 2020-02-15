@@ -2,10 +2,13 @@
   "name": "react-card-slide",
   "version": "1.0.1",
   "description": "React Jsx component used to create Card Item and Slide of Card Items",
-  "main": "slide.jsx",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [ "dist", "README.md" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/geeknection/react-card-slide.git"
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/geeknection/react-card-slide/issues"
   },
-  "homepage": "https://github.com/geeknection/react-card-slide#readme"
+  "homepage": "https://github.com/geeknection/react-card-slide#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
 }
