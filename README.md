@@ -18,7 +18,7 @@ or
 ### Example with slide
 
 ```javascript
-import CardSlide from 'geeknection/react-card-slide/slide';
+import { CardSlideItem } from 'react-card-slide/dist';
 ```
 
 ```javascript
@@ -42,7 +42,7 @@ import CardSlide from 'geeknection/react-card-slide/slide';
 ### Example without slide
 
 ```javascript
-import CardSlideItem from 'geeknection/react-card-slide/card';
+import { CardSlideItem } from 'react-card-slide/dist';
 ```
 
 ```javascript
