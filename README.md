@@ -18,7 +18,7 @@ or
 ### Example with slide
 
 ```javascript
-import { CardSlideItem } from 'react-card-slide/dist';
+import { CardSlide } from 'react-card-slide/dist';
 ```
 
 ```javascript
@@ -36,7 +36,7 @@ import { CardSlideItem } from 'react-card-slide/dist';
         cardName: 'Carde Name 3',
         cardDescription: 'Description 3',
         cardTotal: 2
-      }]]}/>
+      }]}/>
 ```
 
 ### Example without slide
@@ -145,7 +145,7 @@ Graphic data that will be show on body of `CardSlideItem`.
 
 ### `cardGraphLineColor`
 
-Line that is defined to points in Graphic.
+Line that is defined to points in Graphic (In future).
 
 | Type             | Required |
 | ---------------- | -------- |
@@ -155,7 +155,7 @@ Line that is defined to points in Graphic.
 
 ### `cardGraphBgColor`
 
-Background color of Graphic.
+Background color of Graphic (In future).
 
 | Type             | Required |
 | ---------------- | -------- |
